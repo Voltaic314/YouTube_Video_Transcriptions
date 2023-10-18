@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+Database Storage/
+
 # Distribution / packaging
 .Python
 build/
@@ -150,3 +152,13 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+config.py
+Database Storage/base/1/112
+Database Storage/base/1/113
+Database Storage/base/1/1247
+Database Storage/base/1/1247_fsm
+Database Storage/base/1/1247_vm
+Database Storage/base/1/1249
+Database Storage/base/1/1249_fsm
+Database Storage/base/1/1249_vm
+Database Storage/base/1/1255
