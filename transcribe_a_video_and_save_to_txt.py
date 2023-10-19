@@ -74,7 +74,7 @@ def format_filename(video_title) -> str:
 
     Returns: formatted str
     '''
-    return remove_special_characters_from_string(video_title).replace(" ", "_") + ".txt"
+    return remove_special_characters_from_string(video_title) + ".txt"
 
 
 def format_text_file_intro(video_title: str, video_url: str) -> str:

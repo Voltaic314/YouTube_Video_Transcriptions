@@ -131,8 +131,3 @@ def transcribe_video(video_url, formatted_type: str):
     elif formatted_type == "text":
         txt_from_vid = get_text_from_video(video_id=video_id, formatter=TextFormatter())
         return txt_from_vid
-
-
-url = "https://www.youtube.com/shorts/rd30sC8Aspc"
-formatted_type = "json"
-print(transcribe_video(url, formatted_type))

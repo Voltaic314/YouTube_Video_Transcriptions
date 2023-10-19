@@ -1,0 +1,2106 @@
+Video Title: ISTA 130   Intro to Python   Midterm Review
+Video URL: https://www.youtube.com/watch?v=F4hJu1vfIBA
+
+hey everybody so we're going to make a
+midterm review guide I did one of these
+last year but uh my knowledge of python
+has substantially increased so figured
+we might as well just make a new one
+plus technically it's slightly different
+than last year's anyway um so um I'm not
+going to spend forever rambling we're
+just going to jump right into it
+although I will say some of the stuff
+that I talk about might be a little bit
+more helpful if you watch some of my
+other videos but whatever um you know it
+is what it is is um also I'm going to be
+moving around a lot cuz I have a
+standing desk so you'll see me just kind
+of moving around I hope it's not too
+distracting uh I'm just kind of I can't
+really sit stable right now got too much
+physical energy here okay so uh let's
+jump right into it so we're just going
+to go through this like uh Bullet by
+Bullet and then there's some text down
+here as well for topics that we'll go
+through so we're just going to jump
+right into it though so the uh the first
+part
+here says we need to know how to define
+a function well so in order to define a
+function basically you have this part
+here which this whole line is your
+function signature this line line number
+10 here in my python file um so I made a
+function here this is my function and I
+just called it example function that's a
+terrible name uh please don't call your
+functions that but anyway um this is my
+fun function signature line and then
+this part right here defa is how we tell
+python we're going to make a function
+name and it stands for Define so we're
+going to define a function um this part
+right here is the name of our function
+and that's how we're going to have to
+use when we that's the that's what we're
+going to have to reference it's kind of
+like a variable name that's what we
+reference when we want to execute the
+following code in this block this right
+here is our parameter not to be confused
+with arguments we'll go over that in a
+second this is a variable that we Define
+within the function now I want you guys
+to keep something in mind I've talked
+about this before in my scope video if
+you don't know what I'm talking about
+please check out my video about scope uh
+in and functions it'll be very
+tremendously helpful for what I'm about
+to say but this variable right here in
+uh input int plus 5 is only defined
+within this function so I can't access
+this variable in the global name space
+which is out here like where random is I
+can't say for example print input int +
+5 see well it helps if I actually use
+the exact variable name see python is
+like what the heck this isn't defined
+see if I even hover over this it'll say
+there's not like it doesn't it's yeah
+it's not defined it doesn't know what
+I'm talking about but if I do if I just
+move that line of code right in here no
+problems there we're good so that's what
+I wanted to talk about about scope so
+there's a thing in con uh whoops there's
+a thing in Python called scope sorry I
+didn't mean to hit the mic there there's
+a thing in Python called scope and
+basically you have to know that your
+functions have their own kind of like
+variable name space and what I wanted to
+show you also is notice I use the same
+parameter name in this function and this
+function and this function but notice
+they all highlight different things
+because they're all different variables
+like even though they have the same
+names this when I say string to Traverse
+here it's only talking about this string
+to RSE it's not talking about the one
+down here it's not talking about the one
+down here see they're kind of like in
+their own Islands so even though you can
+see all these functions with your own
+eyes python kind of treats it like it
+can only see this one and then it can
+only see this one like once it's inside
+of a function it kind of moves into its
+own little island you know it's kind of
+like it's like literally walking inside
+of a building it's like you know there's
+a world outside around you but for now
+you can really only see like the walls
+of the building you know what I mean
+so it's kind of like when you're
+executing your functions or at least
+when python is it's kind of like walking
+into a new building as soon as it
+executes this function it kind of walks
+into a building and it says oh okay
+there's a variable here and it equals
+our input variable that we had and uh
+this brings me to the last point of
+functions returns returns are kind of
+like your exits out of a function
+because if you think about it like a
+building you know it it's kind of weird
+to say because when we think of a
+building I mean I think of a doorway I
+can walk into a doorway and I can go
+into a building and then I can walk
+right back out that doorway but python
+it's kind of like every door is a
+one-way door so it's like the inputs
+here like my parameter here is kind of
+like and when I call the function it's
+kind of
+like analogy wise it's kind of like when
+I call the function I'm kind of like
+opening the door to the building and I'm
+saying okay python I want you to step
+into my building here and I want you to
+bring that piece of data with you which
+is the parameter
+um which when they call the function
+they'll use the argument but we'll get
+to that in a second um and when they use
+the argument they're going to give us
+that data and I'm going to say okay
+we're going to modify this data when you
+get in here and then when you leave I
+want you to use that door instead you
+can't use this one you have to use the
+one over there so that's kind of like
+functions in an analogous sort of way so
+Returns what returns do is they they do
+two things in this context one they
+provide an exit so your function when it
+hits this uh sorry when it hits this
+return your function will stop executing
+the other way your function would stop
+executing is if there wasn't a return
+but it did all the code in your function
+like let's say I execute this function
+it'll do this and then we never do
+anything with this variable because we
+don't return it or anything so it's like
+okay we have this variable we stored it
+in memory and now it's gone we don't
+care anymore so it would have returned
+but the thing is this is also something
+that I talked about before that again
+I've talked about this before but I
+don't want to overload you guys too much
+but just remember real quick remember if
+you don't write a return statement in
+your functions your functions will
+always return something what will they
+return none all of your functions return
+none without you ever having to type it
+unless the function hit a return
+statement like the one we had a second
+ago oh that's not the return well I
+copied the wrong
+thing that's definitely not a return
+we'll get to that in a minute though um
+yeah if it hits this it won't return
+none it'll return whatever you told it
+to return but if you don't ever put a
+return statement or if you do literally
+say return none in both cases it will
+return none but no note that every
+single function regardless of whether
+you type return anywhere will always
+return something it always returns
+something sometimes I see people say
+this function doesn't return anything
+because it returns none and I'm like
+that's not how that works that's not
+what return none means none is still a
+valid bit of data it's like the null
+concept you you know it's like if I
+asked you what the color of your unicorn
+is you would say that doesn't make sense
+I don't have a unicorn so it's not black
+it's not white it's not really any valid
+color because I don't have a unicorn so
+the answer to that question is null or
+none sometimes it's labeled differently
+in different programming languages
+python likes to be fancy and use the
+word none for common folk language but
+there the kind of concept kind of stems
+from null which is like a general
+computer science thing but anyway so
+every function returns none so that's
+what you need to know about functions
+this is how you um make the function you
+use this line well not this exact line
+but you would say Def and then whatever
+your function name is and then you put
+the parentheses and then you put
+whatever your parameters are and you can
+have multiple parameters so you could
+say input and one input and two and so
+on and so forth um but whoops I want to
+redo that um so you could have multiple
+parameters and uh that's all I'm going
+to really talk about about functions cuz
+I could go I could honestly spend
+another like 45 minutes talking about
+functions but we don't need to cover all
+that so um I do want to talk about how
+to call the function though so that's
+how you make the function now actually
+there is one more thing I need to talk
+about when it comes to making the
+functions
+so this gets complicated and I'm not
+going to waste your guys' time too much
+spending 40 minutes talking just about
+functions and not about anything else
+but remember um one really important
+thing I I believe I've talked about this
+before but one really important thing
+that you need to know about functions is
+when you reference a parameter variable
+in your function python doesn't
+necessarily know what's valid and what's
+not valid for that data type for example
+if I import Turtle into my python
+script then I can import Turtle here and
+we can make a quick turtle function and
+we could say Dev
+move forward by
+length in okay and then I could say
+turtle
+object and then we could say turtle
+object do
+forward
+by oh let's give it another parameter
+and say
+length int and this will be an
+integer so it'd be like a 100 or
+something for example so okay so now I
+have this function and the thing is
+here's the thing hon doesn't know that
+I'm referencing a turtle. turtle object
+when I say turtle object what I mean is
+we expect the user to pass in some kind
+of object that looks kind of like this
+like say Kevin is equal to this and then
+when you call this function you would do
+something like this which gets into the
+part I was going to say about calling
+functions you would pass in the actual
+information and then that's a perfectly
+valid function we could execute just
+this code alone and it would do it
+matter of fact let's just go ahead and
+do that so if we it's also going to
+execute some other stuff that I had down
+there but you can ignore that so um give
+it a second hang on yeah and it moved
+forward and then it it killed it because
+I didn't have like an exit on click
+thing or anything but still like that
+was perfectly valid function but here's
+the thing here's the thing here's what I
+wanted to highlight notice here we use
+the actual variable Kevin Kev Kevin is a
+real turtle object we just saw that
+Kevin is a legit Turtle object that we
+have created and here this when we call
+the function that's when we actually
+pass in the real object that's when we
+pass in the real thing okay like here
+for 100 that's when we passed in the
+real number that we want Kevin to move
+we wanted him to move 100 but I could
+have called it with 500 I could have
+called it with a th doesn't matter well
+there probably is actual limitations but
+you know what I mean but here notice in
+the definition of the function when
+we're defining the function we can use
+generic terms as long as we're
+referencing something you can't just
+make up things you have to reference
+something that exists so you have to
+either make a variable and then
+reference it or you have to reference
+your parameter variables which in this
+case are the turtle object and the
+length integer okay so don't get too
+caught up in all the little crazy
+terminology just focus on what I'm
+saying so here notice what I wanted you
+to notice is is this Turtle object here
+this is just a generic term see even
+Python's saying it's just a parameter
+and its object type is any we don't know
+what kind of data type you're talking
+about here but notice we're not getting
+an error here like even though python
+doesn't know what kind of data this is
+Python's still like okay whatever it is
+it has the forward method it can move
+forward I guess okay
+sure but here's the thing if I try to
+call this function and let's say I get
+my parameters mixed up and let's say we
+do the same thing but we do 100 and then
+Kevin well now Python's really going to
+yell at us so Watch What Happens we're
+going to make python really mad here
+it's going to be kind of funny so um
+let's let python do its thing ah here we
+go look at that error we already got an
+error so it's saying that the integer
+object has no attribute forward so the
+reason that failed is because what
+python actually did when we tried to
+execute that line what python actually
+did is it was basically going into the
+code and it basically did this it did
+100
+forward Kevin that's what it was doing
+instead of kevin. forward 100 notice
+these are basically the same just
+switched and it breaks everything and
+this is what I want you to know is I
+don't care that you know about Turtle
+what I want you to know though is that
+when you're writing your functions
+python is assuming that things will work
+it doesn't know it assumes there are
+some things that it knows but
+that's only with the built-in data types
+but if you're using other libraries like
+random math int stuff like that it just
+has to assume things um so you know
+sometimes I see people say like for
+example here when we did the uh like for
+example we're adding five to a number
+okay but what is the number because we
+don't we never defined a number and I
+see this a lot with people beginning in
+Python they're like I don't understand
+why I can write this function and
+nothing goes wrong because it's like I'm
+not actually giving it a number I don't
+understand like adding five to what and
+people don't realize it's okay this is
+totally fine because python knows that
+when we well it doesn't really know but
+it hopes that when we call this example
+function here we're going to pass in an
+actual number and then we would return
+and that would give us five okay last
+thing I'm going to talk about functions
+and then I swear I swear to God we're
+going to move on okay um let me delete
+all this Turtle code because it's kind
+of irrelevant to what I was really going
+to be talking about in this video but I
+just wanted to highlight that so last
+thing I want to talk about and then I'm
+done I swear to God so functions
+um okay last thing when you return
+something I never said the second thing
+that returns do I just realized I went
+on this really long tangent the second
+thing that returns do is when you return
+anything in this example we're calling
+the function with five so forget about
+returns for just one second let's see
+what happens when we call this function
+with five so we call this function with
+five we say in input integer is uh plus
+5 is going to be equal to whatever the
+input integer was Plus five that's a
+pretty good variable name it's a bit
+wordy but it's pretty good variable name
+cuz that's literally exactly what it is
+um so we're going to return whatever
+that was now I think I passed
+kindergarten but let's do our hand
+counting for a minute here 1 2 3 4 five
+okay we got five sheep over here plus
+another five so um 1 2 3 four five okay
+so let's do that all together now 1 2 3
+4 five whoops went too fast six 7 8 9 10
+okay good I passed kindergarten so
+that's supposed to be 10 okay so uh yeah
+sorry so um when you return a function
+uh or sorry when you return something
+from a function what you're actually
+doing is now that we know what this this
+value is going to be what we're actually
+doing is we're going to set this entire
+function call this block of code that I
+highlighted we're going to set that
+equal to whatever this was so if I set
+this to a variable and I say output
+integer is going to be equal to that
+then I know that if I were to print
+output integer it would be 10 I know
+because I went to kindergarten and
+unless the rules of math suddenly change
+between now and when I click the play
+button uh it should print out 10 and I'm
+not going to do it because I had a lot
+of crap that I was also printing so
+we'll just kind of ignore it for now but
+basically you would know that if you if
+you want to try it for example um and I
+can show this later on as we go in the
+video but if you want to try try it uh
+you know just to test yourself to see if
+you really went through kindergarten and
+you passed um there you go but that's
+what returns actually do the difference
+between printing something and returning
+something which does come up later in
+the PDF so I'm going to go ahead and
+cover it now while we're at it the
+difference between printing something
+and returning something is that when I
+print something it's only displaying it
+to the console but that's it and that's
+fine if that's what you wanted to do but
+let's say I wanted to take this number
+this number 10 here and I want wanted to
+pass it into another function that I
+made that says like I don't know let's
+say it squares the number so now it I
+started with five I go to 10 and then I
+go to 100 and I need to be able to pass
+that 10 to another function I mean sure
+the code is simple enough I could
+probably do allinone function sure but
+when you get into like really
+complicated function design you really
+need to be able to like take one thing
+from a function and put it into
+something else and then put it into
+something else and it kind of becomes
+like this assembly line and so like
+literally like an assembly line when you
+think about it I mean you don't have one
+machine that does everything that would
+be kind of silly you make machines that
+are really really efficient at doing one
+specific task or like a very small few
+of specific tasks and you make them do
+their task and then you send it down the
+pipeline and that's exactly what we're
+doing with our function design that's
+why we use functions and because they're
+more modular because I could in sure I
+could say print 5 + 5 and that's fine
+but what if I want to do this 100 times
+wouldn't it be helpful if I just made a
+function that just takes whatever number
+no matter what it is and add five to it
+and then I can just run it through a
+loop or something like a 100 times I
+mean that way we can just call the
+function instead of saying do this plus
+five like you know or I don't have to
+write like print 5 + 5 plint print 6
+plus 5 print 7 + 5 like a million times
+in my code that would be ridiculous so
+you know that's one of the reasons why
+it helps to have functions because it
+makes things more modular okay moving on
+let's move on so uh we're not going to
+talk about functions anymore we're going
+to go aead and move on to the next stuff
+and I know this it's like bro this video
+is already 18 minutes long we've only
+covered one bullet point trust me we're
+we're already like halfway done you
+don't even understand we just covered so
+much stuff on the midterm you have no
+idea so we're going to quickly kind of
+cover some other stuff here so the next
+thing was we called the function use the
+return value we just went over that too
+um for loops and while
+Loops okay so based on what I'm seeing
+in the PDF there's different parts of
+this um we don't need to know Traverse
+by element but I'm going to go ahead and
+cover it real quick and we're going to
+move on um but we do need to know
+building a string traversing by
+index accumulating a
+sum and to convert between the two if
+possible um okay forget about all the
+syntax let's talk about something
+more conceptual for a second
+so for loops and while Loops there ways
+to like repeat the block of code
+underneath your Loop so for example here
+we're only doing one thing underneath
+the block so in here we say for
+something in something else do stuff and
+the stuff in this case is going to be
+done x amount of times where X is the
+number of
+things in the something else item
+so for example here in our Traverse by
+element uh function that I made here
+basically what's going to happen is if I
+call this function and I pass in a word
+like for example word a four-letter word
+um what's going to happen is that for
+Loop is going to fire off four times
+it's going to go from the top here and
+it's going to say okay character is now
+W so print W and then character is now o
+print o characters now R print R
+characters now D print D and that's what
+it's going to do but I could pass in any
+word I want into this any string doesn't
+have to be a word could be a bunch of
+numbers as long as it's a string itself
+like as long as the data type as a
+string or some kind of iterable even um
+then it can print anything in there so
+basically um for Loops are really good
+for if you're iterating through a
+specific like list of things or a thing
+that could be iterated through which I
+feel like I didn't probably explain that
+as well as I could have um but we're
+going to stay conceptual here while
+loops on the other hand this is the big
+difference while Loops are a little bit
+what so you can iterate through things
+with wild Loops but where wild Loops
+really shine and where I tend to use
+them most in my own code personally uh
+and where I see them use the most in
+other people's code is while Loops are
+better if you're going to do something
+like again and again but you don't
+exactly know when you're going to stop
+like for example user input if I ask you
+do you want to play again yes or no and
+you keep saying something else other
+than yes or no that's fine you're just
+wasting your own time but we still need
+to keep asking you do you want to play
+again yes or no yes or no yes or no yes
+or no even if you don't actually give us
+a proper answer you could do that a
+million times doesn't matter as long as
+the heat death of the universe doesn't
+happen or a meteor hits the Earth or the
+computer crashes or whatever you could
+theoretically keep doing this an
+infinite number of times well maybe not
+infinite I think eventually the program
+would probably run out of memory or
+something but uh but um yeah
+theoretically you could keep doing it in
+infinite number of times we don't really
+know when you're going to actually say
+yes or no so that's when a while loop is
+really really helpful because we're
+going to keep we want to keep doing this
+thing and it's perfectly valid to keep
+doing this thing but we just don't know
+exactly when I'll give you a real world
+example of this um I had to write a
+program that iterated through a list of
+photos to post to Facebook it was like a
+nature photo page and I still moderate
+this page I still have it like it's
+still a real thing um but one of the
+things about it is it actually uses both
+a while loop and a for loop at the same
+time it uses a loop inside of a loop um
+and the it has to do that because
+basically the way it works is we start a
+while loop and then when we start sorry
+I just noticed my mic is clipping a
+little bit I'm speaking a little too
+loud here let me lower my mic volume
+just a little bit for you guys okay
+sorry um I think we're good let me lower
+it just a little bit more just a little
+bit more okay there we go I think that's
+better all right sorry I mean yelling
+you guys your guys' ear okay so it has a
+while loop and a four Loop and the way
+it works is we have a while loop that
+says okay while we don't have a good
+photo to use um let's just keep
+iterating and then we have a for Loop
+and the for Loop gets like a Page worth
+of photos it's kind of like how Google
+used to work I think Google nowadays
+when you search an image on Google it
+kind of like you can kind of scroll
+forever but like you know back in my day
+kids when you Googled a photo on
+Facebook or something you would like
+scroll through like a whole bunch of
+photos and then you'd have to click to
+the next page and then you get to the
+next page of photos and you'd scroll
+through all those and that's essentially
+what the the bot is doing um in that
+sense it's not really like a constant
+stream it's more like a block of photos
+that it has to look through and then it
+checks certain criteria like it hashes
+the image to see if we might have posted
+it before but maybe it's a different
+post on the service that we're getting
+it from um it has to check like the file
+size so it doesn't try to post a photo
+that's like 10 gigabytes in size to
+Facebook or something um and other
+little things like that I'm not going to
+go into the whole thing about it but
+that's an example though because for
+Loops were used to iterate through the
+list of photos on each page but we never
+knew which page was going to give us the
+photo we needed sometimes we had to go
+through like five pages of photos to get
+a photo we either haven't posted before
+or isn't too big or isn't whatever and
+so we had like a list of criteria and we
+so it was like we have this list of like
+15 photos that we iterate through on
+each page 15 photos page one nope page
+two nope page three yep and it's like
+it's like gambling essentially because
+you never know exactly when you're going
+to hit the jackpot on a photo that you
+need
+usually it doesn't take that long but
+you still never know that's why we have
+a y Loop and a four Loop so the way it
+works is the four Loop will iterate
+through a block of things and then if it
+goes through the list and it says okay
+we still didn't find a photo then it
+starts the while loop again and then
+goes into the for Loop and says okay
+let's iterate through these 15 things
+and then okay we didn't find anything
+start the loop again from the while loop
+and then go into the for Loop and then
+you know so it just kind of like does
+the double Loop thing um it gets kind of
+complicated in the real world with
+python as you'll soon realize but I want
+you to be afraid of it because it's
+really fun and it's fun to do these
+things and it's fun to watch your code
+do stuff for you like making that nature
+page oh my God it was so cool to see
+this page just automatically post nature
+photos for me and they were beautiful
+photos um but I'm not going to talk
+about that that's I could talk about
+that forever it is so cool um okay so
+that's when to use while loops and when
+to use for Loops just a quick note while
+Loops are good for if you don't know
+exactly when you're going to stop for
+Loops are good if you know like for
+example you have a list of photos for
+example in that example but let's say
+you don't get another page or whatever
+let's just say you always know there's
+only ever going to be 15 photos or less
+you might find a photo halfway through
+and that's good but at most you're only
+going to go through these 15 photos and
+if it's not in the 15 whatever just shut
+the program down that would be a good
+example of a for Loop in that specific
+instance because you're iterating
+through a specific list of things or if
+you have a list of numbers or if you're
+going through data and you have to pull
+data from a file unless the is
+constantly changing when you're getting
+the data you're kind of getting it in
+chunks and you're just iterating through
+that data so that's when you want to use
+four Loops primarily in Python okay okay
+so let's get back to the
+syntax so this first function I made up
+here not the first one technically but
+this first one involving the four and
+while stuff this is called traversing by
+element and we don't need to know this
+for the midterm so if you want you can
+just kind of mentally shut off here and
+take a break for a moment while I talk
+about this and then we'll talk about the
+index and and stuff but basically this
+is called traversing by element and it's
+saying for you're basically the the
+syntax is basically for something in
+something else print something so this
+is called traversing by element and the
+reason it's helpful is I use traversing
+by element a lot in my own personal
+programming uh because most of the time
+I don't need the index of the thing that
+I got it from I just need the thing like
+I'm just looking for the thing I don't
+really need to know where it was I just
+I need the thing when I see the thing
+I'm good you know so this is traversing
+by element you're you're saying for
+everything in the item let's just print
+the thing basically for ION range length
+thing then this is traversing by index
+so down here I made a helpful function
+for you to kind of keep in mind I'm
+going to space it out a little bit so
+you can kind of see a better thing
+visually here so on the first line of
+our function other than the definition
+like other than the signature line we
+say 4 I in range length string to
+Traverse
+so we're getting the length of the
+string so again let's use the example
+word word here word is a four-letter
+word so this would be for I in range
+four so we're generating a range which
+is basically just a list of numbers 0 1
+2 and three and we're saying on the
+first
+iteration I is going to be zero then I
+is going to be one then I is going to be
+two then I is going to be three I know
+my hands don't really match up with the
+numbers I'm saying but it's because I'm
+talking about the iteration not the
+actual value of I one cool thing that I
+didn't see a lot of people do in their
+homework but I thought was really
+interesting to see every time I saw it
+and something I wish more people knew
+about is you can kind of turn an index
+Loop into an element Loop too just by
+saying um you can make a variable that
+represents whatever the thing is so
+current character would be okay forget
+about loops for a minute let's talk
+about string indexing real quick and
+then this will make more sense if if I
+have a string let's say word let's say
+example string is equal to word okay I
+let's say I have an integer variable and
+let's define it so that python isn't
+screaming at us so if I say print
+example whoops helps if I can type
+example string I need I have too many
+example words it's throwing off my typ
+hinting here if I say print example
+string I what that means is what I'm
+actually doing is I'm saying print
+example string zero and what the zero
+the brackets and the zero represent is
+it it means we only want the first item
+in the string and then one would be the
+second item in the string because
+indexes start at zero
+so I can get the first item the second
+item the third item and the fourth item
+so when I say 4 I in range length
+string what I'm actually saying is for i
+n where I
+represents each item in the thing that
+we're about to generate we're generating
+a range which is basically you can think
+of it like a list of numbers and the
+range that the the range is from zero to
+the length of the string and this will
+always ensure that our range matches up
+with the or that our index matches up
+with the thing that we're talking about
+so we can say current character is equal
+to string to Traverse
+I okay now we can reference both the
+character uh sorry both the character
+and the index at the same time and it's
+really really helpful so let's go ahead
+and print
+that and let's call this function we
+didn't actually uh return it we're just
+printing it so let's call this function
+and let's give it that example that I
+talked about just so you guys can really
+see it with your own eyes and I need to
+print I need to uh
+sorry I need to clear any of these these
+other functions and then we'll talk
+about wall loops and then we'll talk
+about debugging and ifs and then we're
+pretty much done so this this video is
+not be will not be as long as you might
+think it will be okay so let's go ahead
+I don't really want to debug I just want
+to run CU I just want to see all the
+outputs so there we go right there see
+now this was our format right here and
+these are F strings by the way if You'
+never use f strings they're so helpful
+they're so clean they're so easy look
+how easy this is you put an f and then
+you type your string and then anytime
+you need to put a variable in you just
+put in these little brackets look how
+easy that is so simple anyway so and by
+the way these are two different kinds of
+variables this is an integer variable
+you can see it right there it's an
+integer and this is a string well it
+doesn't know it's a string because we
+haven't like told it but um if we told
+it this if we added more typ hinting to
+our function and we Define that as a
+string and then we Define this as a
+string because this is always going to
+be a string then it'll know that this is
+going to be a string because we added
+typ pting some things python knows
+something python doesn't really know um
+sometimes you have to tell it doesn't
+matter it still would have worked
+regardless you can see it right there it
+worked it's just I like to show you
+visually what I mean but notice these
+are two different kinds of variables so
+if I were to concatenate this I would
+have had to convert I to a string in
+order to concatenate this into a string
+but with f strings nope just little
+brackets and then there you go pretty
+easy anyway but you can see it printed I
+which was the index on the string and
+then it printed the arrow I highlighted
+all of that I didn't mean to this was I
+this was zero here printed the arrow in
+the space the space is included in the
+string and then it printed the character
+which was W and it did this four times
+and every time I changed and because I
+changed then the character changed too
+because notice this was static remember
+when we called the function we called it
+with word so this variable never
+actually changes in the entire time of
+our function however because we're
+indexing it the index X part of the
+variable does change because the I is
+what changes here every time now I could
+have just said zero and then I could
+have just printed it and it just would
+have print this line like four times but
+because we used a a value that actually
+changes we used I then therefore our
+output string will change okay anyway
+that's also string indexing we've now
+just covered another thing very simple
+very easy to talk about let's go ahead
+and remove some of these blank lines
+here so we can make our file a little
+bit smaller visually and we'll remove
+our Traverse by index example there so
+now let's talk about while loops with
+traversing by index it's basically the
+exact same code literally right here
+same exact code these two lines I
+literally I'm not even joking I just
+copied and pasted these like well not
+this but just these two I literally
+copied and pasted because it's the exact
+same code the only difference with while
+Loops is we need to Define some
+condition for the while loop to stop so
+the syntax for while Loops is is while
+condition then do this thing and this
+whoops this has to be true or the while
+loop will never fire off and if this
+ever becomes not true then the while
+loop will stop so what I want you guys
+to realize is when you're running your
+functions python will actually execute
+this line first obviously before does
+the loop I mean not first in the
+function but when it gets to this line
+it will execute it and then it will do
+the stuff in your Loop like you're
+probably thinking but what you may not
+realize is let's say it gets to this
+line the I +1 line when it executes this
+line the next line it's going to execute
+is not this that's not the next line it
+executes the next line it executes is
+this because it's going to go back and
+say okay we did all this block of code
+is this still true okay it's still true
+let's keep going and it's going to do
+the same thing four times and the only
+difference here is that we had to make
+our own exit condition here the range
+thing kind of takes care of it for us
+with the for Loop and for Loops kind of
+already have their own built-in end you
+can put a return you can put other stuff
+in there to make it stop like a break or
+whatever but if you never put a break or
+return you're not going to get an
+infinite Loop eventually it will end
+when it reaches the end of whatever the
+thing is that it's iterating through in
+this case it's a range from 0o to four
+which is basically like I know I keep
+saying it's a list it's not technically
+a list but just kind of bear with me
+here conceptually you can think of it
+like a list of numbers where it's like 0
+1 2 3 and then it would end there if
+it's if the word was four or if the
+length of the word was four then it
+would end there so you literally just
+have 0 1 2 3 so it has to go through all
+that but once it gets to three and it
+does three done one loops on the other
+hand this could theoretically keep going
+forever if I didn't set this condition I
+could just say while true and then it'll
+just go forever um so that's why we did
+I equals zero so we had to initiate our
+own variable here and then here we have
+to add one to I to actually make sure
+that this works if we didn't do this
+this line it would just print forever um
+but we have to make sure that we're
+actually increasing I so I want you guys
+to know that when you're using while
+Loops yes it does go back to the first
+line every single time and it will check
+if it's true that's how it knows when to
+exit and when not to exit one quick
+thing about while loops and for loops
+and then we'll kind of move on
+um you can use a break statement to
+return uh or sorry I'm using the wrong
+terminology you can use a break
+statement to kill the loop and and stop
+whatever's in the loop so like let's say
+for example if I wanted to do something
+after this Loop in my function all I
+have to do is say
+print next step that's the next thing I
+wanted to do so I just have to put it on
+the same indention or sorry same
+indentation as where the loop was if I
+am done let's say I only want this line
+of code to execute after this Loop is
+done so now it would print this once
+it's done but if I had a break statement
+here then what would happen is it would
+go well in my exact example what would
+happen is it would print that the
+current character is I and then the
+little arrow and it would do the W and
+then it would stop and then it would
+print next step if we were to execute
+this function it would look like this it
+would look like this line and then the
+next thing would just be next step and
+it wouldn't do any of this nonsense down
+here that's what would happen um one
+other thing about uh and this is also
+true for wild Loops by the way one other
+thing about four loops and while Loops
+if you ever put a return in your code
+like I don't know let's just return that
+I guess if you return
+something inside of a for Loop or in a
+while loop while you're inside of a
+function like how we are right now we're
+kind of in both it will kill not only
+the for Loop sorry not only the for Loop
+but also the wild
+Loop so even though I have the next step
+thing there it
+won't sorry there was something weird
+just happened outside it won't actually
+print the next step it won't say print
+next step like it won't ever get to that
+point
+because once it hits that first return
+it's going to kill the entire function
+it's just going to set the function
+equal to whatever that is and just move
+on it doesn't even care about anything
+beyond this Loop theoretically if you
+had certain conditions it could be
+possible for it to kill still keep doing
+this stuff as long as it never hit the
+return if you have a return anywhere in
+your function as soon as python hits
+that return your whole function's done
+like it doesn't matter what you had
+after it that's why if I were to put
+some other stuff here like I don't know
+print other stuff notice it highlights
+it gray and VSS code because VSS code is
+smart enough to know hey you're an idiot
+because that doesn't work because we
+just hit a return so this will never
+ever fire off anyway so that's returns
+returns are very helpful to know you can
+use them like a break but sometimes you
+want to break the loop and still keep
+going and that's a good example of when
+to use a break versus when to use a
+return in that case so anyway um okay so
+that's how you convert between the two
+and that's traversing by index you don't
+have to know traversing by element it
+will not be on the midterm it says it in
+the PDF but I just wanted to cover that
+um real quick let's just finish up the
+next thing about loops and then we'll
+move on so we've already talked about
+this we've already talked about this
+building a string just means okay let's
+say we want to create a new string so
+instead of just printing let's say we
+want to have a new string and it's equal
+to new string and let's make it an empty
+string what we could do is we could just
+say new string Plus equals current
+character and now our string is going to
+be equal to basically the output word
+once we finish the output word well
+let's not print it that way let's just
+print it as new
+string but um now once we do this
+function let's go ahead and call the
+function again real quick Traverse by
+index word so now this should print out
+the wrd thing but it should also print
+word once it's done
+and it did right there and because
+that's what that's what building a
+string is that's what that line means it
+means we're taking a string could be an
+empty string could not be an empty
+string whatever but we're building it
+we're adding something new to it and we
+are kind of creating a new string based
+on that now this seems kind of pointless
+like okay we already have the word here
+why do I want to print it there but you
+could do this with other things so I
+know that example seems kind of
+pointless but just that's the most
+simplistic example of the idea that I
+can show you
+and that particular example it kind of
+doesn't make sense to do that but
+whatever anyway um accumulating a sum
+basically the exactly the same thing but
+instead of um instead of a string we're
+using a number here so let's say example
+integer again terrible variable names
+guys please don't use these variable
+names um but anyway so we could do the
+exact same thing because notice I was an
+integer so we could use that so we could
+say Okay um how about example integer
+plus
+equals I and then we could
+print example integer and let's space it
+out so it's a little bit easier to see
+based on the indentation like what's
+actually happening so it's going to go
+through this Loop and it's going to keep
+adding numbers to this and then once it
+gets to the end of the loop we're going
+to also print that so now let's go ahead
+and do the same thing and if my math is
+right we should get six from this if we
+call it with word again so I guess I
+should have kept that but it's literally
+the same exact thing we should say word
+and then six instead of word and word
+yeah right there see six there it is so
+that's buil that's accumulating a sum
+that's building a string it just means
+to it's kind of like your pig dice game
+where you added a dice roll number to it
+so basically same thing okay moving on
+let's get rid of all this crap we don't
+need any of this oh goodness goodness
+goodness goodness okay um all right
+we're pretty much almost done actually
+believe it or not because all the other
+things I'm going to talk about I've kind
+of already talked about to some extent
+um but let's go ahead and finish up here
+with the top bullet points and then then
+we'll move on to the we already talked
+about indexing a string so we can we can
+skip that um I just need to cover these
+three things real quick and we're not
+going to cover them to their like
+fullest extent but I am going to cover
+them a little bit print and input I'm
+going to cover first because that's like
+the simplest possible thing to cover out
+of those three so print takes an
+infinite number of arguments so if I
+say
+print
+I and then hello hello and then what's
+up it can I can keep going with this
+forever now when you add a comma in a
+print function call you're giving it
+multiple arguments and when you give
+print multiple arguments it has what's
+known as a separator value and this is a
+keyword argument that you can access and
+it's by default the separator value is
+always going to add a space between each
+string but you could change this you
+could say I want want these all to print
+on new lines so it's going to say hi and
+then a new line and then hello and let's
+just add a space at the end and let's go
+ahead and execute that so notice now it
+printed them all on new lines but if we
+get rid of this part it's just going to
+print them all spaced out so Watch What
+Happens now see now it prints them all
+spaced out that's what's known as the
+separator keyword argument in the print
+statement very very simple I know it
+seems somewhat might seem somewhat
+complicated but it's very very simple
+you literally you can give print any
+number of arguments but if you put a
+comma between it and you don't change
+the separator argument by default it'll
+always put a space between anything you
+put a comma
+between okay the input argument on the
+other hand is a little bit
+different the input argument only takes
+one argument or none you don't
+necessarily have to put an argument in
+if you don't put an argument in it'll
+just kind of print a blank line right
+here and it'll just keep blinking and I
+just have to hit enter and then it
+executes but if I do give it an argument
+it has has to be a single thing and
+generally it has to be a string so you
+could say please whoops I think I typoed
+but I can't really see cuz my cursor is
+the wayy please type your favorite
+number and then I can go ahead and
+execute this and I can say I'm a
+favorite number is five sure why not and
+then we're done but if I put a comma
+here it's going to break see let's say
+please type your favorite number and
+your favorite
+animal okay sure why not let try to
+execute this oh look at that got an
+error input expected at most one
+argument it got two instead oh yeah it's
+cuz we have a comma here we're putting
+in multiple arguments into input that's
+not how input works so input only takes
+one
+argument so one other thing about input
+real quick input always returns a string
+so right here even though we gave it
+five watch what
+happens if I save that to a variable and
+I say users
+favorite number is going to be equal to
+whatever that input was if I print the
+type of user's favorite number let's go
+ahead and print what their favorite
+number well we don't have to print it
+because we're typing it in input so you
+guys can see it but let's go ahead and
+print what the type of that variable is
+watch what happens if we run this code
+and I say five is my favorite number why
+not hit enter look at that it's a string
+five is a string which means I am
+basically um when I when I type that and
+hit enter I'm basically saying user's
+favorite num is going to be equal to
+five like this string of five so I can't
+I can't just say like five + 10 because
+that'll break like python won't
+understand what I'm trying to do and
+it'll break
+so remember that when users pass input
+into the user input function into the
+input function it will always return a
+string so you have to use certain
+methods to kind of like convert that
+input to other things uh but I'm not
+going to go to deep into that cuz I'll
+waste way too much time talking about
+that we don't need to talk about that
+right now but I just wanted to help you
+guys remember that and that is on the
+midterm that does actually like I don't
+know about the questions wise but that
+does show up in this PDF is what I meant
+so okay so let's go ahead and move on we
+talked about print and input let's talk
+about um evaluating arithmetic so
+there's a couple different arithmetic
+things in Python so there's or operators
+that's the word I was looking for so
+there's different operators there's the
+word in there's the word is there's
+these um like equal signs like this
+means is it equal to something sorry let
+me get rid of these words so you know
+what I'm talking about the double equal
+means is something equal to that so we
+could say A to B and it's like does a
+equal b as opposed to a equals B which
+is like okay a definitely does equal B
+but the line above that is saying does a
+equal B I don't know um the next thing
+you can do is you can say let's just
+keep our B here cuz why not you could
+say a is greater than than or less than
+sorry not greater than or less greater
+than or equal to B um you could say that
+a is less than or equal to B you could
+say that a is greater than b or you
+could say a is less than b you could say
+a is B that's a specific kind of word
+and I don't think we ever cover that in
+this class so you can look that up on
+your own time when your brain isn't
+fried from all the information I'm
+throwing at you um just make a note of
+that and look it up later don't worry
+about it right now um but it's kind of
+like the equals equals but not exactly
+the same there is a difference but
+anyway we'll move on um but you could
+also say a in B and this is actually a
+question because we're not saying that a
+is in B what we're saying is is a in B
+and you see this a lot in strings so for
+example let's say I have my word string
+variable here and we're going to call it
+equal to word um I want to know if
+there's a w
+in that string so we could say I don't
+know uh
+W in word string and this should print
+out true I think if I did my syntax
+correctly true there we go see yeah W is
+in string notice this is a question
+because it's a true or false so like
+python has to evaluate it has to figure
+out okay is the is the substring inside
+of this string and it says true and let
+me get rid of the variable so you can
+see like literally what it's actually
+doing
+it's literally saying okay is W in word
+um yeah true see it still prints true so
+the in variable is used a or the sorry
+the N keyword in Python is used a lot if
+you're EV evaluating if a certain thing
+is in a bigger thing like if a if a
+character if a specific character or a
+substring and you can use more than one
+character for this by the way I could
+have said wo in word for example but
+you're basically saying is this smaller
+thing inside of this bigger thing and
+this is true for strings for lists for
+tupal uh dictionaries all kinds of stuff
+um so it's a great great thing to do
+please memorize this if you can but
+don't memorize it for the I don't think
+it'll be on the midterm but just
+something to make a note of to your own
+notes um definitely use it so um those
+are your operators you also have and and
+you have or and not and not not just is
+like a negative sign like in math it
+just kind of converts whatever it is so
+if you say not true then it's false if
+you say not false then it's true and I
+could say not
+W in word and if I printed this whole
+line well I have to actually use an
+actual literal because I don't have the
+variable anymore but if I printed this
+line it would say false because we know
+that W is in word but I could say
+or o in
+Word and in this case we know that W is
+in word and O is in word but what if I
+use something here that wasn't in the
+word like what if I said P okay so if p
+is in word then true so now we're
+talking about multiple things so this
+part is true so let's just go ahead and
+do that let's make a new line so I can
+show you visually what I'm doing here so
+we know that the first part of this is
+true now let's have our or statement
+okay so now we need to evaluate the
+second part is p in word no there's no
+letter P in the word word so we know
+this is going to be false now for those
+of you who have taken discret math you
+already know what this is going to turn
+out to for those of you who have studied
+the truth tables you already know what
+this is going to turn out to and if you
+don't that's okay just follow my example
+here so when you have an or statement
+and you have a true or a false it's
+always going to use the true
+statement so we know that this is going
+to turn into true and now we can get rid
+of our parenthesis Here and Now not true
+well that's that's just going to be
+equal to false and that's how you
+evaluate that stuff very very simple now
+if this was an and then these would both
+have to be true so if these are both
+true then this would be true but since
+we know that this one isn't true then we
+know the whole thing is going to
+evaluate to false however since we have
+a not here since we know this turns into
+not false well what's not false true
+true Isn't false there you go so look
+now we have a true statement so
+um this is this is kind of more like a
+highle like conceptual thing you don't
+really think about this until you're
+actually writing if statements um but
+that's how you evaluate that stuff very
+very simple just break it down into
+small pieces and then evaluate it piece
+by piece and utilize parentheses because
+where the parentheses are matters in
+these kinds of things but I won't get
+into all that we're wasting way too much
+time we're already almost an hour in and
+we barely even covered like the first
+page but we're actually almost done with
+most of the content though okay next
+thing I want to talk about is ifs versus
+L ifs so we're going to move on to this
+example function that I made and I'm
+going to uncomment this stuff out here
+in a second but we're going to move on
+to this next example function that I
+made and this function iterates through
+by element if you remember the
+terminology for character and input
+string here so we're saying if the
+character so let's think about the the
+example so I have this example
+here where I called the function with
+test. one23 so we have a string that's
+test123 and
+um we're trying to see if each letter is
+like a letter or if it's like a number
+or if it's not a letter or a number so
+here's the thing what I love about this
+example is this is exactly how if L if
+and else actually works because what
+we're saying is if some condition mind
+you by the way every time you write an
+if statement all you're ever actually
+telling python is if whatever this
+condition is is true then do whatever is
+under the if statement so what I want
+you to think about when you're writing
+python I want you to just like forget
+about all the crazy when you look at all
+this at first glance it's like whoa
+there's so much going on here don't
+worry about it break it down line by
+line and section by section this part
+here on this if statement it's saying
+for or sorry I'm looking at the for Loop
+this part here on the if statement is
+saying if some condition and this some
+condition is character. is Alpha we
+haven't really gone over string Methods
+so I don't expect you guys to really
+know what this part is but this this is
+how you this is a way that you can get a
+string to say like this will return true
+like this whole block of code right here
+will return true if the character is
+like a letter in the alphabet basically
+and this will return true if it's a
+number from like 0 to 9 UM and it only
+looks at one digit at a time that's why
+it's 0 to n so anyway so basically
+what's going to happen is when we go
+through this thing it's going to print
+okay the current letter is w and then
+that's going to be true and it's not
+going to do any of these and then
+current letters o current letters d or
+actually what what was our string oh
+we're doing test okay sorry it would be
+T and then e and then s and then T and
+then do would go down to the else and
+then it would go one two three and
+that's how it's going to execute it's
+going to execute this if statement four
+times and it's going to do the else one
+more time and then it's going to do the
+L if but what I wanted to tell you
+is there's a difference between doing if
+and L if here because notice I could do
+the same exact thing
+let's do the same thing let's just copy
+the code why not I could do the same
+thing but I could just make this a bunch
+of
+ifs and I could say
+if
+not character is
+Alpha or
+character is digit hey look we use that
+exact example like I showed you below
+where we were talking about the KN and
+then the parentheses how funny I just
+told you you might not see this in your
+actual code but here we are we're doing
+it right there
+so there's a difference between these
+two even though they'll both actually
+end up printing the same thing there's a
+difference
+because the way python executes these
+are completely different so the
+difference between an if versus an L if
+when you have a second if on the same
+line the difference is python once
+python like let's say this function for
+example when python executes this
+function what's going to happen is it's
+going to check and it's going to say
+okay p is a letter okay do whatever this
+is once it does that it's not even going
+to give a crap about what's under here
+unless there's another if somewhere then
+like in this function it would print
+okay current letter is T then the
+difference is on this time when we call
+the function it is going to check all of
+these even though it doesn't need to
+because T can't be both a letter and a
+number at the same time and it certainly
+can't be either or or like sorry it
+can't be neither of them
+it has to be one or the other or neither
+like it can't literally be both of any
+of these combinations so it doesn't make
+sense to use a bunch of ifs here whereas
+if we do this example this makes perfect
+sense because in our current
+example yeah our character could be a
+letter but it definitely couldn't be a
+number at the same time it definitely
+couldn't be an else but there are valid
+examples as to when you'd want to use
+multiple ifs like this and the example
+of when to do that would be take my
+photo thing for example again remember I
+told you there was different criterias
+for the photos that we needed to check
+we needed to check the file size we need
+to check if it was a duplicate post or
+not if we've already posted it before um
+there was other things like we hashed
+the image which helped with the
+duplicates um we also checked our post
+ID on the service that we were getting
+the post from because we were using
+photos from pixels and pixels is kind of
+similar to Facebook in that it has post
+IDs and then we can check the post ID
+because we store the post IDs in a
+database so in those examples what I'm
+trying to say is those were completely
+different criteria like a photo could be
+perfect in every criteria but not meet
+the file size criteria so we kind of
+have like a checklist it's like okay
+check check check check check in those
+examples then you would use a series of
+ifs in that case like conceptually maybe
+not exactly how you would actually code
+it because that might not be the most
+efficient way to do it but theoretically
+that's how you would do it like in
+theory in terms of this kind of example
+so if we were checking if the character
+was a letter like actually an alpha like
+not alpha numeric but if it was an alpha
+letter A through Z we could also check
+if the letter was a certain kind of
+letter or we could check if maybe the
+letter has shown up again already like
+maybe we're keeping a count of how many
+letters are in the string like for
+example the word test has two T's in it
+so maybe we have like a variable maybe
+we have like a dictionary object that
+counts how many times we see each letter
+and anytime we see a letter we haven't
+seen before will add it to like the
+dictionary but we haven't covered
+dictionaries yet so don't worry about
+that but um but you could have like
+different criteria and that's when it
+would be fine to use other ifs but
+computationally this doesn't make sense
+because in this exact example these
+things are they can't all be the same so
+that's when you would use an if versus
+an L if versus like all that and by the
+way else catches anything that the if
+didn't catch so in this case this
+particular line will execute because of
+the dot but if I didn't have the dot
+this line would never actually execute I
+mean python will still check it if the
+ifs aren't true it'll still check it but
+because we have the else python will
+just say okay do whatever else was a
+thing because this wasn't a thing you
+see else a lot in user input or in
+places where we don't always know what
+our data could turn into um but we do
+want to do something with our data if it
+meets a certain criteria but we don't
+necessarily want to do do anything with
+it if it's something else but we still
+want to control for those scenarios we
+don't just want to not do anything
+sometimes oh excuse me we don't just
+want to not do anything we want to do
+something we just don't know what we
+want to do specifically because we don't
+know what this thing is so that's a good
+example of when to use an else in this
+case we're controlling for a character
+that's not a letter or a number say
+we're going to do some fancy magic here
+um I I I don't have any magic that does
+anything to symbols so like I guess
+we'll just say it it's not a letter or a
+number can't do anything so that's what
+else does it does everything that these
+two didn't do even if you just have one
+if it does everything that the if didn't
+do now note about L if L if stands for
+else if and you can't have an L if by
+itself if I comment this line python
+will yell at me watch this Python's so
+mad look at it it's just fuming right
+now look at him raging dude what a what
+a rager bro so if I get rid of this it's
+fine but if I if I do that again look
+Python's mad again what a freaking nerd
+look at that guy so mad so anyway yeah
+um you can't have an LF without an if
+you have to have at least one if on the
+same indentation above an L if otherwise
+it it kind of breaks everything it
+really pisses python off if you want to
+make python mad there you go easy way
+easy way to do
+it okay let's move on that was
+everything I needed to cover in the
+whole top of this PDF um I'm not really
+going to go over this stuff because this
+is pretty straightforward the only thing
+I wanted to mention is this is integer
+division so if I do like
+three / one well that's not a good
+example let's do like 6 divid 3 then
+this would be two but if I did like five
+divid 3 then this would be like 2. 66666
+repeating but if I just did five double
+divide like integer division by three
+then this would be two even though it's
+not actually two but it's two point
+something and we don't care about the
+point something something we just care
+about what the number was and this is
+good for if you're doing something where
+you don't actually care what the decimal
+is you just want to know what the
+closest what the lowest like possible
+number it could possibly be is without
+actually like that can still go into it
+but maybe not the full thing um so
+that's a good example and then likewise
+if you kind of wanted to do the opposite
+of that where you do actually care what
+the remainder was and you want to know
+what it was as an integer this up here
+would give you you two but maybe this
+isn't the best example hang on let's do
+this so um wait what am I doing 5
+divided by three would be one what am I
+talking about if that was what am I
+doing I didn't pass kindergarten guys I
+lied earlier I didn't pass kindergarten
+apparently this would be one I'm sorry
+I'm an idiot this would be one but this
+would be
+two sorry
+goodness a major tickle in my throat
+there so what this does this percent
+sign is known as the modulus operator
+and it gives you the remainder so 5 ID 3
+is one with a remainder of two left over
+where we almost got a three again but we
+weren't right there we were one off so
+we had a remainder of two so this gives
+us the one this is the remainder so
+they're kind of like opposites in that
+regard but like two sides of the same
+coin
+essentially
+um okay we're not going to go over pims
+cuz that's kind of just a general
+algebra thing but just keep in mind what
+it like how I'll just have you read the
+PDF here because does actually explain
+it pretty well and I don't want to waste
+your guys' time with another two hours
+of
+lecturing
+um okay we kind of went over all this
+stuff oh we didn't go over the not true
+thing okay I'm so sorry I forgot about
+this earlier so um if you say a
+exclamation point equals B what you're
+saying is a does not equal B and this
+can be a question too like you can say U
+well it's not ever really a question but
+you could say like if a does not equal B
+then do something something cuz you may
+not necessarily know but you can use it
+as a statement to put into if statements
+to kind of turn it into a question um
+but that's basically what it does it's
+kind of like the opposite of the equals
+equals so it's like it's basically
+saying a does not equal B basically
+instead of a could equal B so anyway um
+moving
+on we kind of already talked about all
+this
+stuff
+um yeah Boolean stuff will always
+evaluate the true or
+false um there is one more Boolean thing
+I wanted to talk about but I don't know
+if we'll have enough time because I'm
+trying to look through the rest see what
+we haven't covered I want to kind of
+skip some stuff because we did already
+talk about this like for example we
+already talked about the uh not and an
+or stuff we also talked
+about Boolean Expressions can exist
+without necessarily using an if
+statement I already proved this with the
+in thing thing when I was talking about
+W in word we kind of already proved that
+remember it printed true without an if
+statement so we kind of already talked
+about that so I'm going to kind of move
+on um know what happens when a
+[Music]
+value is a condition is in a condition
+okay I think we have enough time because
+I have a reason to talk about this now
+so I'm going to Super quickly cover this
+because we've already when been going on
+for an hour now and I have a lot to talk
+about um but we are almost done actually
+there's a lot of stuff that I've already
+covered um but I do want to talk about
+this real quick
+so every variable in Python well maybe
+not every variable specifically but
+every built-in data type in Python has
+what's known as a buol method or a
+length method and this method allows us
+to evaluate whether it's true or
+false and every built-in data type like
+strings integers floats booleans
+themselves obviously uh length not sorry
+not length um lists is what I meant to
+say dictionaries tupal sets Frozen sets
+all these things they all have the
+ability
+to evaluate whether they are true or
+false and I will show you watch what
+happens if we use this bull uh function
+here we can get whether it's true or
+false based on that so let's go ahead
+and pass in an object
+here now the bull function returns stuff
+so we have to print its value so let's
+go ahead and print
+so sorry so let's actually you know what
+let's make it a variable and let's say x
+is equal to 5 Okay so let's print what x
+is evaluated to because X is five like
+is X true or false that doesn't make any
+sense X is five it's not a it's not a
+Boolean variable well guess what we can
+still evaluate it check this out if if
+we print this it should print true oh
+yeah and it printed all the debug stuff
+that I was talking about I wanted to
+cover debugging I'm not sure if I have
+enough time so we're not going to worry
+about it also I'm going to remove this
+so we don't need to worry about that
+anymore um and I'm just going to comment
+this line out so it doesn't mess with
+our print statements so um now let's
+just clear this crap out so now if we
+run this see it printed true that was
+our print statement right there true but
+why did it print true aha aha so here
+here's what I was going to say every in
+Python when it comes to the built-in
+objects like strings lists tupal and
+dictionaries and so forth those specific
+kinds of objects are what's known as
+iterable objects which means we can
+iterate through them so I can make a for
+Loop and go through each item in that
+thing so like I could get the each
+character in the string I could get each
+item in a list I could get each item in
+a dictionary whatever um a lot of these
+we haven't talked about yet but think
+about strings I can get each character
+in a string so that's what's known as an
+iterable item iterables will always
+evaluate the
+true if they are not empty so for
+example if x was an empty string here
+let's go ahead and redefine X and let's
+just kill this
+line there we go so it's not too
+confusing it would have worked without
+killing that line but I want to fully
+show you guys so now notice if it's
+false because it's
+empty okay that makes sense but now if
+we add in something to the string let's
+just add in a DOT for example now it's
+not an empty string anymore it has a dot
+in there Watch What Happens boom now
+it's
+true this is true of strings itals of
+any kind which also includes lists tupal
+dictionaries and sets and so on and so
+forth however numeric data types like
+integers and floating Point numbers like
+five and five .0 which is a float now
+but these data types will always
+evaluate to true if they are not zero so
+we've already did this but let's go
+ahead and show you if I print X is equal
+to 5 and then print the Boolean value of
+that that's true but watch what happens
+if I change X to Zero it's false also if
+I convert X to a float and I say 0.0
+also false but if I do
+0.1 not it's uh it's not false it's true
+see right there so boom easy peasy easy
+peasy now where this comes in handy
+is I know this seems like one of those
+really weird things it's like why am I
+even talking about this this seems like
+such a niche thing let me know let me
+tell you I use this every single day
+every single day I swear to God I use
+this every day in Python the reason this
+is so helpful to know is I I work with
+lists a lot and I work with iterables a
+lot a lot of my work generally comes
+with lists and dictionaries and things
+like that
+so I need to know if these things are
+empty because there are certain sections
+of my code when I'm writing my code
+personally there's certain sections of
+my code where I'm like okay I want you
+to go through this list and I want you
+to get like the 17th item or whatever
+and then do some stuff with the 17th
+item but the thing is if we try to like
+index a thing that doesn't exist like
+say for example if I say let's get rid
+of our print buol thing by the way the
+Bool is how you evaluate stuff the true
+or false but you can do you could
+literally just do this like let me show
+you before I move on I don't mean to get
+too distracted here but let me show you
+I could just say if x then print X and
+then it'll print five to the console so
+see there we go and that's what if x
+means it means that if x is true then do
+stuff but anyway let me show you what I
+was talking about before so let's say we
+have a string here let's just say word
+string is equal to word and then let's
+say I want to index that whoops I
+accidentally typed a quote there
+somewhere um let's say I want to index
+that so let's say we want to say print
+word string and then like three that
+should give us D I think if my math is
+right so there we go print a d but
+here's the thing I also want to
+print uh like a thing that doesn't exist
+so here's the thing if I want to like or
+actually you know what let's not do
+index out of range let's do a different
+kind of air so if I want to do this
+that's fine but what if somewhere in my
+code word string got redefined itself to
+an empty string well now I'm going to
+get an index out of range error see
+index out of range right there
+so what if I had an if statement that
+could control for scenarios like that
+what if I said if word string then print
+word string
+three and maybe also you might want to
+say like if word string and length of
+word string is like greater than three
+or
+something I don't know just for the sake
+of or like greater than or equal to I
+guess I don't know whatever you know
+what I mean anyway you might want to add
+another if statement there for that
+particular scenario but yeah I could
+just say that and now watch what happens
+it's not going to print anything because
+it what okay word string was false so
+okay since word string is an empty
+string let's not do something that's
+what I want to show you guys that's
+what's so helpful it's so helpful I
+swear to God I use this every single day
+um so helpful I swear so let's move on
+um there I pretty much covered almost
+everything uh let's see if was anything
+I didn't cover we talked about the
+length function I kind of showed you
+when I was doing stuff length will just
+return what however many numbers of
+characters there are in the string if
+you're using it for
+Strings uh string literals are always
+enclosed in quotes that just the
+literals means like this it means I'm
+literally typing a string directly into
+python that's what the lit rals means um
+okay make sure you differentiate between
+a variable and a literal again a
+variable would be like for example
+word string is equal to word so this is
+literal this is a variable that's it
+pretty easy easy
+stuff okay um we talked about input uh
+backs slash in this creates a new line
+This creates a tab indent you can use
+them in strings like
+this back slash in right there that will
+create a new line at the end of that
+print statement which print already does
+that but it would make another new line
+at that point and then you could use a
+tab here and that would make a tab and
+then print will also add a new line as
+well by default um so it would have a
+tab space and then it would print a new
+line and a tab is just four spaces so
+yeah anyway U but you can use that you
+can also by the way people don't know
+this but you can also use this for
+quotes as well so I can add this it's
+kind of hard cuz my cursor is kind of
+blocking but I could put quotes around
+my character I could say current letter
+is and then I think I called it with
+test one two3 down here I kind of
+commented it out but it would put like
+quote t quote at the end of that part um
+so that's those are known as Escape
+characters so anyway moving on we're
+going to fire through the rest of this
+so we can be
+done
+um type casting functions how to use
+them
+yeah yeah that's uh the type casting
+functions are if I remember correctly
+let's not tell you guys the wrong thing
+let's look this up type casting in
+Python type casting functions in Python
+specifically uh yeah that's what I
+thought it's the functions that convert
+the function uh convert variables so I
+could say
+like example
+string of five is going to be equal to
+five and then I could say float five and
+that would make it 5.0 basically and
+then I could say int five and that would
+make it five which it would turn into
+that literally um and then I could
+say like int I don't know in string
+whatever so you can you can put multiple
+of these and you could say what
+is what is
+this
+uh oh
+crap
+okay I have a meeting that I have to go
+to crap okay hang on guys uh I think we
+pretty much covered everything though uh
+let me just look through real quick I
+have a meeting that starts in 10 minutes
+but we're already at the end of the PDF
+so I think we have pretty much covered
+everything so understand how Print Works
+it can take multiple arguments uh if you
+yeah you can use concatenating you can
+multiply string variables BL blah we
+kind of covered all this stuff um print
+and return we already talked about the
+difference between print and return
+print just prints it out to the console
+like this but return actually sets your
+function call equal to whatever it is
+that you returned we didn't really cover
+random um but I'll cover that real quick
+and I think that might be the last thing
+um be able to define specific parts of
+the function yep see I already talked
+about was uh scope yep um scope we
+talked about scope at the beginning of
+the video there's the loops
+okay uh you don't need to know nested
+Loop string method slicing touring by
+element none of that
+um know when to use while loop if you
+use while loop or sorry not while loop
+if you use while true in a loop you have
+to use a return statement or you have to
+use a break otherwise the loop will
+never end so if you're in a function you
+just have to make sure that you use a
+break or a return otherwise your Loop
+will never actually
+end so just keep that in mind I like to
+use wild true a lot in my own personal
+coding because it's just like easier for
+most of the things that I do but there
+are definitely more valid options um I
+kind of skipped the whole page sorry uh
+know how to use a loop to update a
+variable yep we kind of talked about
+that already um I'll let you figure out
+what weird is I'll leave that as an
+exercise to the reader because I don't
+have much time uh you should be able to
+look at a loop and know what it's doing
+yep
+um know what a string variable index by
+an integer evaluates to yep we talked
+about this uh this would be one two
+three this would be lowercase e By the
+way
+uh what does the above print yeah we
+just said that know what the four and
+while loop control variables are the
+control variables are what's known as
+these things this character here and
+this I here and this Char this I here
+and this character here they're all
+control variables and they
+control when the loop will stop because
+in a in a for Loop the I when the I
+reaches the final thing that it was
+iterating through and it can't be
+anything else when the I can't be
+defined as anything else then it's going
+to stop so um like for example if I were
+to Traverse through the word word I
+would first be equal to W then it would
+well first it actually be zero because
+if we're doing it by index but it would
+be zero for w and then one for o and
+then R for or three for R and then or
+two for R and then three for D and then
+on the third sorry on the fourth
+iteration when I is three it would Loop
+to the next iteration and then it would
+say well I can't be anything else so
+it'll stop and this is also our control
+variable here for the while Loops kind
+of the same
+thing um know how to convert four loops
+and while Loops oh know how to Traverse
+accessing elements okay no okay we just
+did that awesome okay we're done all
+right I gotta go guys I hope this was
+super helpful I'm so sorry I didn't get
+to do this longer I got to go have a
+meeting in seven minutes um I'll see you
+guys later if you have any question
+questions please feel free to comment
+below message me email me whatever I
+don't know whatever gets a hold of me
+fastest I don't care I probably won't
+check the comments to be honest I mean I
+might but I won't be all that quick
+about it but if you do message me on
+slack or email me or something that's a
+lot easier if you're in my class
+otherwise uh yeah thanks for watching
+guys sorry if this seemed a little
+rushed I didn't have a whole lot of time
+but I hope that was helpful good luck on
+the midterm you guys can you guys got
+this if you need help just rewatch
+certain sections of this it'll make this
+easier to understand hopefully if not
+just look up on Google look up these
+terms whatever you need to do I don't
+care or we just ask me okay well I'll
+see you guys later thanks for watching
+good luck bye
