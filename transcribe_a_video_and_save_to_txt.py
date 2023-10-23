@@ -23,7 +23,7 @@ def get_video_url_to_transcribe() -> str:
         youtube_in_link = video_to_transcribe.count("youtube")
         youtu_be_in_link = video_to_transcribe.count("youtu.be")
 
-        # adding safeguards because users are stupid lmao
+        # adding safeguards because users are silly sometimes
         if not (youtube_in_link or youtu_be_in_link):
             print("Please input a valid YouTube url, not shortened please.")
 
