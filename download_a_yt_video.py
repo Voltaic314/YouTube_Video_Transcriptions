@@ -17,7 +17,7 @@ def remove_special_characters_from_string(input_string: str) -> str:
     Parameters:
     input_string: str you wish to format
 
-    Returns: formatted str
+    Returns: str - copy of input string with only its letters, numbers, and spaces.
     '''
     new_string = ""
     for character in input_string:
@@ -27,9 +27,20 @@ def remove_special_characters_from_string(input_string: str) -> str:
 
 
 def get_video_url_from_user_input() -> str:
-    user_input = input("Please type the YT url of the video you wish to download: ")
-    if 'youtube' in user_input or 'youtu.be' in user_input:
-        return user_input
+    '''
+    This function asks the user for input to get the YT url that we want to download.
+
+    Returns: str representation of the YT url they want to download.
+    '''
+    while True:
+        user_input = input("Please type the YT url of the video you wish to download: ").strip()
+        
+        # make sure user gave a valid YT link
+        if 'youtube' in user_input or 'youtu.be' in user_input:
+            return user_input
+        
+        else:
+            print("I don't understand that link. Please enter only the link of the video with a youtube.com or youtu.be url...")
 
 
 def download_video(url: str, filename: str = None) -> bool:
@@ -37,6 +48,14 @@ def download_video(url: str, filename: str = None) -> bool:
     Saves a video to its highest resolution. Optional argument to pass in
     a custom filename. If none is passed, it will save with the video title
     as the filename, with only alphanumeric & space characters in the filename.
+    
+    Parameters: 
+    url: the string of the URL of the YT vid you want to download. 
+    This can be a normal url like youtube.com, or shortened like youtu.be, and
+    this also works for shorts and past livestreams. 
+    filename: str of the filename you wish to use. Can be relative or absolute.
+
+    Returns: True if the file was successfully saved, False otherwise.
     '''
     video: YouTube = YouTube(url=url)
     video_filename = remove_special_characters_from_string(video.title) + ".mp4"
